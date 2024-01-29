@@ -1,0 +1,17 @@
+
+{
+    "type": "better-sqlite3",
+    "database": "./data/mydatabase.db",
+    "synchronize": true,
+    "logging": true,
+    "entities": [
+        "src/entity/*.js"
+      ],
+    "migrations": ["src/migrations/*.js"],
+    "subscribers": ["src/subscribers/*.js"],
+    "cli": {
+      "entitiesDir": "src/entities",
+      "migrationsDir": "src/migrations",
+      "subscribersDir": "src/subscribers"
+    }
+  }
